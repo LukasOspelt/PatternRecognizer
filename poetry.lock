@@ -134,6 +134,17 @@ test = ["Pillow", "contourpy[test-no-images]", "matplotlib"]
 test-no-images = ["pytest", "pytest-cov", "wurlitzer"]
 
 [[package]]
+name = "csv-logger"
+version = "1.3.0"
+description = "Simple class to log to csv using the logging rotating handler, output is a rolling csv log"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "csv_logger-1.3.0-py3-none-any.whl", hash = "sha256:fb8d06b1f69f766211317375d3b366498c254c3ae306dcf004627e47b461ef2a"},
+    {file = "csv_logger-1.3.0.tar.gz", hash = "sha256:802188f7b898ef17fd1cba091bd40dcbf23f02a0e92337cc8c41cc74182674d8"},
+]
+
+[[package]]
 name = "cycler"
 version = "0.11.0"
 description = "Composable style cycles"
@@ -572,4 +583,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "f814efc0978d29fd64819cf3db17c7f8ed80d0c1d581d0641dd2273000b56b2c"
+content-hash = "ccf0701df0423f69ce5b1604a3aa899a585ab2463ed59b182d4c6592c06cf2c5"

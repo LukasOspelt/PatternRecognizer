@@ -4,6 +4,7 @@ __copyright__ = "Copyright 2023 to Infinity and Beyond, CEDES AG"
 import cv2
 from image_proc.image_proc import ImageProcessor
 from visualizer.visualizer import Visualizer
+from Logger.logger import csvlogger
 
 
 class App:
@@ -18,6 +19,7 @@ class App:
                 pattern_list = self.image_processor.process(frame)
                 for pattern in pattern_list:
                     print(f"Pattern name: {pattern.name}, Color: {pattern.color}")
+                    csvlogger.logs_p([pattern.name, pattern.color])
                 self.visualizer.visualize(frame, pattern_list)
 
                 if cv2.waitKey(1) & 0xFF == ord("q"):
