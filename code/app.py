@@ -13,13 +13,16 @@ class App:
         self.visualizer = Visualizer("MyVis")
 
     def run(self):
+        pattern_list = []
         try:
             while True:
                 frame = cv2.imread("assets/test_image.JPG", cv2.IMREAD_COLOR)
+                pattern_list_old = pattern_list
                 pattern_list = self.image_processor.process(frame)
-                for pattern in pattern_list:
-                    print(f"Pattern name: {pattern.name}, Color: {pattern.color}")
-                    csvlogger.logs_p([pattern.name, pattern.color])
+                if pattern_list != pattern_list_old:
+                    for pattern in pattern_list:
+                        print(f"Pattern name: {pattern.name}, Color: {pattern.color}")
+                        csvlogger.logs_p([pattern.name, pattern.color])
                 self.visualizer.visualize(frame, pattern_list)
 
                 if cv2.waitKey(1) & 0xFF == ord("q"):
