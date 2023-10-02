@@ -16,7 +16,10 @@ class App:
         pattern_list = []
         try:
             while True:
-                frame = cv2.imread("assets/test_image.JPG", cv2.IMREAD_COLOR)
+                image = cv2.imread("assets/test_image.JPG", cv2.IMREAD_COLOR)
+                crop = cv2.selectROI("Select the area", image)
+                frame = image[int(crop[1]):int(crop[1]+crop[3]), int(crop[0]):int(crop[0]+crop[2])]
+                            
                 pattern_list_old = pattern_list
                 pattern_list = self.image_processor.process(frame)
                 if pattern_list != pattern_list_old:
