@@ -9,3 +9,8 @@ date,level,value_1,value_2
 02/10/2023 13:28:30,logs_p,Circle,YELLOW
 02/10/2023 13:28:30,logs_p,Square,RED
 02/10/2023 13:28:30,logs_p,Rectangle,BLUE
+02/10/2023 15:37:35,logs_p,Square,VIOLET
+02/10/2023 15:37:35,logs_p,Triangle,GREEN
+02/10/2023 15:37:35,logs_p,Circle,YELLOW
+02/10/2023 15:37:35,logs_p,Square,RED
+02/10/2023 15:37:35,logs_p,Rectangle,BLUE
