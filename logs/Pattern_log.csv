@@ -1,11 +1,11 @@
-date,level,value_1,value_2
-02/10/2023 13:24:47,logs_p,Square,VIOLET
-02/10/2023 13:24:47,logs_p,Triangle,GREEN
-02/10/2023 13:24:47,logs_p,Circle,YELLOW
-02/10/2023 13:24:47,logs_p,Square,RED
-02/10/2023 13:24:47,logs_p,Rectangle,BLUE
-02/10/2023 13:28:30,logs_p,Square,VIOLET
-02/10/2023 13:28:30,logs_p,Triangle,GREEN
-02/10/2023 13:28:30,logs_p,Circle,YELLOW
-02/10/2023 13:28:30,logs_p,Square,RED
-02/10/2023 13:28:30,logs_p,Rectangle,BLUE
+Date|	Level|	Shape|	Color
+03/10/2023 10:51:42|	logs_p|	Pattern name: Square, Color: VIOLET
+03/10/2023 10:51:42|	logs_p|	Pattern name: Triangle, Color: GREEN
+03/10/2023 10:51:42|	logs_p|	Pattern name: Circle, Color: YELLOW
+03/10/2023 10:51:42|	logs_p|	Pattern name: Square, Color: RED
+03/10/2023 10:51:42|	logs_p|	Pattern name: Rectangle, Color: BLUE
+03/10/2023 10:52:29|	logs_p|	Pattern name: Square| Color: VIOLET
+03/10/2023 10:52:29|	logs_p|	Pattern name: Triangle| Color: GREEN
+03/10/2023 10:52:29|	logs_p|	Pattern name: Circle| Color: YELLOW
+03/10/2023 10:52:29|	logs_p|	Pattern name: Square| Color: RED
+03/10/2023 10:52:29|	logs_p|	Pattern name: Rectangle| Color: BLUE

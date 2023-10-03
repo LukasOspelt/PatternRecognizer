@@ -3,14 +3,14 @@ import logging
 from time import sleep
 
 filename = 'logs/Pattern_log.csv'
-delimiter = ','
+delimiter = "|\t"
 level = logging.INFO
 custom_additional_levels = ['logs_p']
 fmt = f'%(asctime)s{delimiter}%(levelname)s{delimiter}%(message)s'
 datefmt = '%d/%m/%Y %H:%M:%S'
 max_size = 10485760  # 1 Megabyte
 max_files = 1  # 1 rotating files
-header = ['date', 'level', 'value_1', 'value_2']
+header = ['Date', 'Level', 'Shape', 'Color']
 
 # Creat logger with csv rotating handler
 csvlogger = CsvLogger(filename=filename,

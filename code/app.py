@@ -22,7 +22,7 @@ class App:
                 if pattern_list != pattern_list_old:
                     for pattern in pattern_list:
                         print(f"Pattern name: {pattern.name}, Color: {pattern.color}")
-                        csvlogger.logs_p([pattern.name, pattern.color])
+                        csvlogger.logs_p([f"Pattern name: {pattern.name}| Color: {pattern.color}"])
                 self.visualizer.visualize(frame, pattern_list)
 
                 if cv2.waitKey(1) & 0xFF == ord("q"):
