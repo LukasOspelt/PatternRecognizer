@@ -24,3 +24,4 @@ csvlogger = CsvLogger(filename=filename,
                       max_files=max_files,
                       header=header)
 
+

@@ -14,15 +14,17 @@ class App:
 
     def run(self):
         pattern_list = []
+        image = cv2.imread("assets/test_image.JPG", cv2.IMREAD_COLOR)
         try:
             while True:
-                frame = cv2.imread("assets/test_image.JPG", cv2.IMREAD_COLOR)
-                pattern_list_old = pattern_list
+                
+                crop = cv2.selectROI("Select the area", image)
+                frame = image[int(crop[1]):int(crop[1]+crop[3]), int(crop[0]):int(crop[0]+crop[2])]
                 pattern_list = self.image_processor.process(frame)
-                if pattern_list != pattern_list_old:
-                    for pattern in pattern_list:
-                        print(f"Pattern name: {pattern.name}, Color: {pattern.color}")
-                        csvlogger.logs_p([f"Pattern name: {pattern.name}| Color: {pattern.color}"])
+                
+                for pattern in pattern_list:
+                    print(f"Pattern name: {pattern.name}, Color: {pattern.color}")
+                    csvlogger.logs_p([f"Pattern name: {pattern.name}| Color: {pattern.color}"])
                 self.visualizer.visualize(frame, pattern_list)
 
                 if cv2.waitKey(1) & 0xFF == ord("q"):
