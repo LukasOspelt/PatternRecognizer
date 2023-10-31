@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Date|	Level|	Shape|	Color
 03/10/2023 10:51:42|	logs_p|	Pattern name: Square, Color: VIOLET
 03/10/2023 10:51:42|	logs_p|	Pattern name: Triangle, Color: GREEN
@@ -129,3 +130,36 @@ Date|	Level|	Shape|	Color
 24/10/2023 10:57:39|	logs_p|	Pattern name: Triangle| Color: BLUE
 24/10/2023 10:57:39|	logs_p|	Pattern name: Circle| Color: BLUE
 24/10/2023 10:58:10|	logs_p|	Pattern name: Circle| Color: BLUE
+=======
+date,level,value_1,value_2
+02/10/2023 13:24:47,logs_p,Square,VIOLET
+02/10/2023 13:24:47,logs_p,Triangle,GREEN
+02/10/2023 13:24:47,logs_p,Circle,YELLOW
+02/10/2023 13:24:47,logs_p,Square,RED
+02/10/2023 13:24:47,logs_p,Rectangle,BLUE
+02/10/2023 13:28:30,logs_p,Square,VIOLET
+02/10/2023 13:28:30,logs_p,Triangle,GREEN
+02/10/2023 13:28:30,logs_p,Circle,YELLOW
+02/10/2023 13:28:30,logs_p,Square,RED
+02/10/2023 13:28:30,logs_p,Rectangle,BLUE
+02/10/2023 15:37:35,logs_p,Square,VIOLET
+02/10/2023 15:37:35,logs_p,Triangle,GREEN
+02/10/2023 15:37:35,logs_p,Circle,YELLOW
+02/10/2023 15:37:35,logs_p,Square,RED
+02/10/2023 15:37:35,logs_p,Rectangle,BLUE
+02/10/2023 16:10:48,logs_p,Square,VIOLET
+02/10/2023 16:10:48,logs_p,Triangle,GREEN
+02/10/2023 16:10:48,logs_p,Circle,YELLOW
+02/10/2023 16:10:48,logs_p,Square,RED
+02/10/2023 16:10:48,logs_p,Rectangle,BLUE
+05/10/2023 11:00:19,logs_p,Square,VIOLET
+05/10/2023 11:00:19,logs_p,Triangle,GREEN
+05/10/2023 11:00:19,logs_p,Circle,YELLOW
+05/10/2023 11:00:19,logs_p,Square,RED
+05/10/2023 11:00:19,logs_p,Rectangle,BLUE
+21/10/2023 15:10:27,logs_p,Square,VIOLET
+21/10/2023 15:10:27,logs_p,Triangle,GREEN
+21/10/2023 15:10:27,logs_p,Circle,YELLOW
+21/10/2023 15:10:27,logs_p,Square,RED
+21/10/2023 15:10:27,logs_p,Rectangle,BLUE
+>>>>>>> Dokumentation
